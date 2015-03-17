@@ -1,14 +1,11 @@
-## Put comments here that give an overall description of what your
-## functions do
-
-## Write a short comment describing this function
+##Assignment 2:
 ## makeCacheMatrix creates a special "matrix" object that can cache its inverse
 ## input: takes a square matrix
 ## goal: find its inverse and cache
 ## return: inverse matrix
 ## output format: list of named methods
 ### get: will return the matrix input data
-### set: will set the matrix input data
+### set: will set the matrix input data and reset the inverse output
 ### setimat: will set the inverse matrix result (cache)
 ### getimat: will return the inverse matrix result from cache
 ### example: x<-matrix(rexp(16), 4,4) ix<-makeCacheMatrix(x)
@@ -26,10 +23,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
 ## cacheSolve return an inverse of the specail "matrix"  object returned by makeCacheMatrix funtion
 ## input: special "matrix" object returned by makeCacheMatrix function
-##  goal: return inverse of a  matrix  from cache, if not found find inverse and cache.
+##  goal: return inverse of a  matrix  from cache. If cache not found, find inverse and cache.
 ## return: inverse matrix
 ## output format: matrix
 ### example: cacheSolve(ix)
